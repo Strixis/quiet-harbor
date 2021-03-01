@@ -1,0 +1,17 @@
+extends templates/layout
+
+block content
+  .container
+    block header
+      include templates/navy
+
+    block content
+        p Hello!
+        img(src=require('img/favicon.png'), alt="img")
+        include templates/checkbox
+        +checkbox('Check 1', 'test 1', '1')
+        +checkbox('Check 2', 'test 2', '2')
+        +checkbox('Check 3', 'test 3', '3')
+
+    block footer
+      p Copyright
