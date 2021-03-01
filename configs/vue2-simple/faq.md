@@ -27,7 +27,9 @@
 22. vue-template-compiler
 
 ### Установка вручную:
-1. Установка пакетов `npm i -D webpack webpack-cli webpack-dev-server terser-webpack-plugin html-webpack-plugin babel-loader @babel/core @babel/preset-env css-loader css-minimizer-webpack-plugin mini-css-extract-plugin style-loader sass sass-loader postcss postcss-loader postcss-preset-env resolve-url-loader clean-webpack-plugin vue vue-loader vue-template-compiler`
+1. Установка пакетов:
+* `npm i -D webpack webpack-cli webpack-dev-server terser-webpack-plugin html-webpack-plugin babel-loader @babel/core @babel/preset-env css-loader css-minimizer-webpack-plugin mini-css-extract-plugin style-loader sass sass-loader postcss postcss-loader postcss-preset-env resolve-url-loader clean-webpack-plugin vue-loader vue-template-compiler`
+* `npm i vue`
 2. Настройка webpack: [webpack.config.js](./webpack.config.js)
 3. Поддержка браузеров: [.browserlistrc](./.browserlistrc)
 4. Настройка Babel: [babel.config.json](./babel.config.json)
