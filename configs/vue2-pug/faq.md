@@ -37,8 +37,10 @@
 4. Настройка Babel: [babel.config.json](./babel.config.json)
 5. Настройка Postcss: [postcc.config.js](./postcc.config.js)
 6. В package.json в раздел scripts добавляем
-```"dev": "webpack serve --mode development",
-"build": "webpack --mode production"```
+```
+"dev": "webpack serve --mode development",
+"build": "webpack --mode production"
+```
 
 *Я не буду здесь расписывать что и как настраивается. Для этого есть офф сайты, документации и статьи.*
 
