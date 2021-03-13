@@ -32,8 +32,11 @@
 4. Настройка Babel: [babel.config.json](./babel.config.json)
 5. Настройка Postcss: [postcc.config.js](./postcc.config.js)
 6. В package.json в раздел scripts добавляем
-`"dev": "webpack serve --mode development",
-"build": "webpack --mode production"`
+```
+"dev": "webpack serve --mode development",
+"build": "webpack --mode production"
+```
+
 *Я не буду здесь расписывать что и как настраивается. Для этого есть офф сайты, документации и статьи.*
 
 ### Пока pug 3 не дружит с pug-loader и pug-cli
@@ -45,8 +48,10 @@
 4. Настройка Babel: [babel.config.json](./babel.config.json)
 5. Настройка Postcss: [postcc.config.js](./postcc.config.js)
 6. В package.json в раздел scripts добавляем
-`"dev": "webpack serve --mode development",
-"build": "webpack --mode production"`
+```
+"dev": "webpack serve --mode development",
+"build": "webpack --mode production"
+```
 
 ### Быстрая установка:
 1. Забираем package.json, package-lock.json, .browserslistrc, babel.config.json, postcss.config.js и webpack.config.js.

@@ -1,6 +1,6 @@
-# simple config template for html/sass/js
+# simple config template for pug/sass/vue
 
-Набор настроек для работы с html/sass/js.
+Набор настроек для работы с pug/sass/vue.
 
 ### Набор:
 1. @babel/core
@@ -14,29 +14,34 @@
 9. postcss-loader
 10. postcss-preset-env
 11. resolve-url-loader
-12. sass
-13. sass-loader
-14. style-loader
-15. terser-webpack-plugin
-16. webpack
-17. webpack-cli
-18. webpack-dev-server
-19. clean-webpack-plugin
-20. vue
-21. vue-loader
-22. vue-template-compiler
+12. pug
+13. pug-plain-loader
+14. sass
+15. sass-loader
+16. style-loader
+17. terser-webpack-plugin
+18. webpack
+19. webpack-cli
+20. webpack-dev-server
+21. clean-webpack-plugin
+22. vue
+23. vue-loader
+24. vue-template-compiler
 
 ### Установка вручную:
 1. Установка пакетов:
-* `npm i -D webpack webpack-cli webpack-dev-server terser-webpack-plugin html-webpack-plugin babel-loader @babel/core @babel/preset-env css-loader css-minimizer-webpack-plugin mini-css-extract-plugin style-loader sass sass-loader postcss postcss-loader postcss-preset-env resolve-url-loader clean-webpack-plugin vue-loader vue-template-compiler`
+* `npm i -D webpack webpack-cli webpack-dev-server terser-webpack-plugin html-webpack-plugin babel-loader @babel/core @babel/preset-env css-loader css-minimizer-webpack-plugin mini-css-extract-plugin style-loader pug pug-plain-loader sass sass-loader postcss postcss-loader postcss-preset-env resolve-url-loader clean-webpack-plugin vue-loader vue-template-compiler`
 * `npm i vue`
 2. Настройка webpack: [webpack.config.js](./webpack.config.js)
 3. Поддержка браузеров: [.browserlistrc](./.browserlistrc)
 4. Настройка Babel: [babel.config.json](./babel.config.json)
 5. Настройка Postcss: [postcc.config.js](./postcc.config.js)
 6. В package.json в раздел scripts добавляем
-`"dev": "webpack serve --mode development",
-"build": "webpack --mode production"`
+```
+"dev": "webpack serve --mode development",
+"build": "webpack --mode production"
+```
+
 *Я не буду здесь расписывать что и как настраивается. Для этого есть офф сайты, документации и статьи.*
 
 ### Быстрая установка:
