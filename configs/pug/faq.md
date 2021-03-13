@@ -39,7 +39,7 @@
 ### Пока pug 3 не дружит с pug-loader и pug-cli
 Здесь мы ставим pug 2.0.4 и pug-loader 2.4.0. При установке вылезет `high severity vulnerabilities`. Просто не обращаем внимания. Все должно работать. Если вышел новый pug-loader - используем вариант установки вручную.
 
-1. Установка пакетов `npm i -D webpack webpack-cli webpack-dev-server terser-webpack-plugin html-webpack-plugin babel-loader @babel/core @babel/preset-env css-loader css-minimizer-webpack-plugin mini-css-extract-plugin style-loader sass sass-loader postcss postcss-loader postcss-preset-env resolve-url-loader pug@2.0.4 pug-loader2.4.0 clean-webpack-plugin`
+1. Установка пакетов `npm i -D webpack webpack-cli webpack-dev-server terser-webpack-plugin html-webpack-plugin babel-loader @babel/core @babel/preset-env css-loader css-minimizer-webpack-plugin mini-css-extract-plugin style-loader sass sass-loader postcss postcss-loader postcss-preset-env resolve-url-loader pug@2.0.4 pug-loader@2.4.0 clean-webpack-plugin`
 2. Настройка webpack: [webpack.config.js](./webpack.config.js)
 3. Поддержка браузеров: [.browserlistrc](./.browserlistrc)
 4. Настройка Babel: [babel.config.json](./babel.config.json)
