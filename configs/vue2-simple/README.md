@@ -33,7 +33,7 @@
 2. Настройка webpack: [webpack.config.js](./webpack.config.js)
 3. Поддержка браузеров: [.browserslistrc](./.browserslistrc)
 4. Настройка Babel: [babel.config.json](./babel.config.json)
-5. Настройка Postcss: [postcc.config.js](./postcc.config.js)
+5. Настройка Postcss: [postcss.config.js](./postcss.config.js)
 6. В package.json в раздел scripts добавляем
 ```
 "dev": "webpack serve --mode development",
