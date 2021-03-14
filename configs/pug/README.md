@@ -28,7 +28,7 @@
 ### Установка вручную:
 1. Установка пакетов `npm i -D webpack webpack-cli webpack-dev-server terser-webpack-plugin html-webpack-plugin babel-loader @babel/core @babel/preset-env css-loader css-minimizer-webpack-plugin mini-css-extract-plugin style-loader sass sass-loader postcss postcss-loader postcss-preset-env resolve-url-loader pug pug-loader clean-webpack-plugin`
 2. Настройка webpack: [webpack.config.js](./webpack.config.js)
-3. Поддержка браузеров: [.browserlistrc](./.browserlistrc)
+3. Поддержка браузеров: [.browserslistrc](./.browserslistrc)
 4. Настройка Babel: [babel.config.json](./babel.config.json)
 5. Настройка Postcss: [postcc.config.js](./postcc.config.js)
 6. В package.json в раздел scripts добавляем
@@ -44,7 +44,7 @@
 
 1. Установка пакетов `npm i -D webpack webpack-cli webpack-dev-server terser-webpack-plugin html-webpack-plugin babel-loader @babel/core @babel/preset-env css-loader css-minimizer-webpack-plugin mini-css-extract-plugin style-loader sass sass-loader postcss postcss-loader postcss-preset-env resolve-url-loader pug@2.0.4 pug-loader@2.4.0 clean-webpack-plugin`
 2. Настройка webpack: [webpack.config.js](./webpack.config.js)
-3. Поддержка браузеров: [.browserlistrc](./.browserlistrc)
+3. Поддержка браузеров: [.browserslistrc](./.browserslistrc)
 4. Настройка Babel: [babel.config.json](./babel.config.json)
 5. Настройка Postcss: [postcc.config.js](./postcc.config.js)
 6. В package.json в раздел scripts добавляем
