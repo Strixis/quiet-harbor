@@ -5,5 +5,5 @@
 Находим нужный, копируем, изменяем.
 
 ### Шаблоны:
-* [index.html](./index.hrml) - index.html с title под title из webpack с htmlWebpackPlugin
+* [index.html](./index.html) - index.html с title под title из webpack с htmlWebpackPlugin
 * [index.pug](./index.pug) - index.pug с title под title из webpack с htmlWebpackPlugin
