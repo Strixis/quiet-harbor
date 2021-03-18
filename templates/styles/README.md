@@ -7,5 +7,6 @@
 ### Шаблоны:
 * [block](./block.sass)
 * [button](./button.sass)
+* [img](./img.sass)
 * [link](./link.sass)
 * [text](./text.sass)
