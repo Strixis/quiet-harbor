@@ -11,5 +11,5 @@
 
 ### templates
 В templates лежат шаблоны стилей и разметки.
-* [styles](./styles/) - шаблоны для стилей
-* [document](./document/) - шаблоны для разметки
+* [styles](./templates/styles/) - шаблоны для стилей
+* [document](./templates/document/) - шаблоны для разметки
