@@ -1,21 +1,13 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractplugin = require('mini-css-extract-plugin');
+const PugPlugin = require('pug-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const imgOutput = 'sources/img/[name][ext]';
 const fontsOutput = 'sources/fonts/[name][ext]';
 
 module.exports = (_, { mode }) => ({
-  entry: path.resolve(__dirname, 'src', 'index.js'),
   devtool: mode === 'production' ? false : 'source-map',
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'index.js',
-    publicPath: '',
-  },
   resolve: {
     extensions: [
       '.js',
@@ -27,6 +19,15 @@ module.exports = (_, { mode }) => ({
       img: path.resolve(__dirname, 'src', 'assets', 'img'),
       scripts: path.resolve(__dirname, 'src', 'assets', 'scripts'),
     },
+  },
+  entry: {
+    'index': path.resolve(__dirname, 'src', 'index.pug')
+  },
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'index.js',
+    publicPath: '',
+    clean: true,
   },
   module: {
     rules: [
@@ -46,17 +47,10 @@ module.exports = (_, { mode }) => ({
         },
       },
       {
-        test: /\.s[ac]ss$/,
+        test: /\.(css|scss|sass)$/,
         use: [
-          mode === 'production' ? {
-            loader: MiniCssExtractplugin.loader,
-            options: {
-              publicPath: '',
-            },
-          } : 'style-loader',
           'css-loader',
           'postcss-loader',
-          'resolve-url-loader',
           {
             loader: 'sass-loader',
             options: {
@@ -69,16 +63,11 @@ module.exports = (_, { mode }) => ({
         ],
       },
       {
-        test: /\.css$/,
-        use: [
-          mode === 'production' ? MiniCssExtractplugin.loader : 'style-loader',
-          'css-loader',
-          'postcss-loader',
-        ],
-      },
-      {
         test: /\.pug/,
-        use: 'pug-loader',
+        loader: PugPlugin.loader,
+        options: {
+          method: 'render',
+        }
       },
       {
         test: /\.(jp(e)?g|png|gif|svg)$/,
@@ -103,6 +92,15 @@ module.exports = (_, { mode }) => ({
       },
     ],
   },
+  plugins: [
+    new PugPlugin({
+      modules: [
+        PugPlugin.extractCss({
+          filename: 'index.css',
+        })
+      ]
+    })
+  ],
   optimization: {
     minimize: mode === 'production' ? true : false,
     minimizer: [
@@ -110,16 +108,4 @@ module.exports = (_, { mode }) => ({
       new TerserPlugin(),
     ],
   },
-  plugins: [
-    new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      title: 'title',
-      favicon: path.resolve(__dirname, 'src', 'favicon.png'),
-      template: path.resolve(__dirname, 'src', 'index.pug'),
-      filename: 'index.html',
-    }),
-    new MiniCssExtractplugin({
-      filename: 'index.css',
-    }),
-  ],
 });
