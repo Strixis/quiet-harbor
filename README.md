@@ -4,6 +4,7 @@
 
 ### configs
 В configs хранятся файлы настроек.
+* [vanilla](./configs/vanilla/) - набор настроек для работы с html/css/js
 * [simple](./configs/simple/) - набор настроек для работы с html/sass/js
 * [pug](./configs/pug/) - набор настроек для работы с pug/sass/js
 * [vue2-simple](./configs/vue2-simple/) - набор настроек для работы с html/sass/vue без Vue CLI
