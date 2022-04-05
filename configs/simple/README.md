@@ -6,9 +6,9 @@
 1. @babel/core
 2. @babel/preset-env
 3. babel-loader
-4. css-loader
-5. css-minimizer-webpack-plugin
-6. html-webpack-plugin
+4. html-webpack-plugin
+5. css-loader
+6. css-minimizer-webpack-plugin
 7. mini-css-extract-plugin
 8. postcss
 9. postcss-loader
@@ -16,15 +16,13 @@
 11. resolve-url-loader
 12. sass
 13. sass-loader
-14. style-loader
-15. terser-webpack-plugin
-16. webpack
-17. webpack-cli
-18. webpack-dev-server
-19. clean-webpack-plugin
+14. terser-webpack-plugin
+15. webpack
+16. webpack-cli
+17. webpack-dev-server
 
 ### Установка вручную:
-1. Установка пакетов `npm i -D webpack webpack-cli webpack-dev-server terser-webpack-plugin html-webpack-plugin babel-loader @babel/core @babel/preset-env css-loader css-minimizer-webpack-plugin mini-css-extract-plugin style-loader sass sass-loader postcss postcss-loader postcss-preset-env resolve-url-loader clean-webpack-plugin`
+1. Установка пакетов `npm i -D webpack webpack-cli webpack-dev-server terser-webpack-plugin html-webpack-plugin babel-loader @babel/core @babel/preset-env css-loader css-minimizer-webpack-plugin mini-css-extract-plugin sass sass-loader postcss postcss-loader postcss-preset-env resolve-url-loader`
 2. Настройка webpack: [webpack.config.js](./webpack.config.js)
 3. Поддержка браузеров: [.browserslistrc](./.browserslistrc)
 4. Настройка Babel: [babel.config.json](./babel.config.json)
