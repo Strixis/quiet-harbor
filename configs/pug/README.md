@@ -19,10 +19,9 @@
 14. webpack
 15. webpack-cli
 16. webpack-dev-server
-17. clean-webpack-plugin
 
 ### Установка вручную:
-1. Установка пакетов `npm i -D webpack webpack-cli webpack-dev-server terser-webpack-plugin babel-loader @babel/core @babel/preset-env css-loader css-minimizer-webpack-plugin style-loader sass sass-loader postcss postcss-loader postcss-preset-env pug pug-plugin`
+1. Установка пакетов `npm i -D webpack webpack-cli webpack-dev-server terser-webpack-plugin babel-loader @babel/core @babel/preset-env css-loader css-minimizer-webpack-plugin sass sass-loader postcss postcss-loader postcss-preset-env pug pug-plugin`
 2. Настройка webpack: [webpack.config.js](./webpack.config.js)
 3. Поддержка браузеров: [.browserslistrc](./.browserslistrc)
 4. Настройка Babel: [babel.config.json](./babel.config.json)
